@@ -3,8 +3,6 @@ import { connect } from "react-redux";
 import Radium from "radium";
 import _ from "lodash";
 
-import Sidebar from "react-sidebar";
-
 @connect(state => state.data)
 @Radium
 class App extends React.Component {
@@ -12,11 +10,7 @@ class App extends React.Component {
   render() {
     return (
       <div>
-        <h1>{this.props.message} and reloads</h1>
-        <button style={styles}>Click Me</button>
-        <div>
-          "Root. Console."
-        </div>
+        <h1>Reactive 2015 Victory Demo</h1>
         {this.props.children}
       </div>
     );
@@ -34,3 +28,48 @@ var styles = {
 };
 
 export default App;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

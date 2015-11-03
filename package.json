@@ -43,7 +43,11 @@
     "redux-logger": "^2.0.4",
     "redux-router": "^1.0.0-beta3",
     "redux-thunk": "^1.0.0",
-    "victory-chart": "1.2.1",
-    "victory-pie": "0.0.1"
+    "victory-axis": "^1.4.0",
+    "victory-bar": "^2.3.0",
+    "victory-chart": "https://github.com/FormidableLabs/victory-chart#9301b9f0b72e0f790bb588a67720792ab",
+    "victory-line": "^0.4.1",
+    "victory-pie": "0.0.2",
+    "victory-scatter": "^0.4.0"
   }
 }

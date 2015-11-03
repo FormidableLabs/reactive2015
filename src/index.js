@@ -12,10 +12,10 @@ import configureStore from "./store";
 
 // Components
 import App from "./components/app";
-import ModerateComments from "./components/moderate-comments";
-import ParticipantModeration from "./components/moderate-people";
-import ConversationConfig from "./components/conversation-config";
-import ConversationStats from "./components/conversation-stats";
+import LineDemo from "./components/line-demo";
+import ScatterDemo from "./components/scatter-demo";
+import PieDemo from "./components/pie-demo";
+import CompositionDemo from "./components/composition-demo.js"
 
 const store = configureStore();
 
@@ -26,6 +26,10 @@ class Root extends React.Component {
         <Provider store={store}>
           <Router>
             <Route path="/" component={App}>
+              <Route path="line" component={LineDemo}/>
+              <Route path="scatter" component={ScatterDemo}/>
+              <Route path="pie" component={PieDemo}/>
+              <Route path="composition" component={CompositionDemo}/>
             </Route>
           </Router>
         </Provider>
