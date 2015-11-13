@@ -11,7 +11,11 @@ class PieDemo extends React.Component {
     return (
       <div>
         <h3>Victory Pie</h3>
-
+        <VictoryPie
+          endAngle={90}
+          innerRadius={140}
+          padAngle={5}
+          startAngle={-90}/>
       </div>
     );
   }

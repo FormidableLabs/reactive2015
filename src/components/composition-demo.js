@@ -18,6 +18,7 @@ class CompositionDemo extends React.Component {
   render() {
     return (
       <div className="demo">
+        <h3> Composition Example </h3>
         <svg style={style.parent}>
           <VictoryAxis
             style={_.merge({
