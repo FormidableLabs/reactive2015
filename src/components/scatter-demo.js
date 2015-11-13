@@ -3,10 +3,7 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import _ from "lodash";
-import {VictoryChart} from "victory-chart";
-import {VictoryAxis} from "victory-axis";
-import {VictoryLine} from "victory-line";
-import {VictoryScatter} from "victory-scatter";
+import * as V from "victory";
 
 class ScatterDemo extends React.Component {
 
@@ -14,10 +11,10 @@ class ScatterDemo extends React.Component {
     return (
       <div>
         <h3>Victory Scatter</h3>
-        <VictoryChart>
-          <VictoryAxis dependentAxis orientation="right"/>
-          <VictoryAxis orientation="top"/>
-          <VictoryScatter
+        <V.VictoryChart>
+          <V.VictoryAxis dependentAxis orientation="right"/>
+          <V.VictoryAxis orientation="top"/>
+          <V.VictoryScatter
             size="1"
             y={(x) => x * x}
             style={
@@ -28,7 +25,7 @@ class ScatterDemo extends React.Component {
               }
             }
             />
-        </VictoryChart>
+        </V.VictoryChart>
       </div>
     );
   }

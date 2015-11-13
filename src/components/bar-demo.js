@@ -2,8 +2,7 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import _ from "lodash";
-import {VictoryAxis} from "victory-axis";
-import {VictoryLine} from "victory-line";
+import {VictoryAxis, VictoryLine, VictoryBar} from "victory";
 
 class CompositionDemo extends React.Component {
 
@@ -19,7 +18,7 @@ class CompositionDemo extends React.Component {
             ticks: {stroke: "transparent"},
             tickLabels: {fill: "black"}
           }}}/>
-        <VictoryAxis label="y axis" dependentAxis orientation="left"
+        <VictoryAxis label="y axis" dependentAxis
           tickValues={[0, 1.5, 3, 4.5]}
           style={{data: {
             grid: {strokeWidth: 1},

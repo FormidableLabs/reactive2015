@@ -3,7 +3,7 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import _ from "lodash";
-import {VictoryPie} from "victory-pie";
+import {VictoryPie} from "victory";
 
 class PieDemo extends React.Component {
 

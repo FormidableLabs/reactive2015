@@ -3,9 +3,7 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import _ from "lodash";
-import {VictoryChart} from "victory-chart";
-import {VictoryAxis} from "victory-axis";
-import {VictoryLine} from "victory-line";
+import {VictoryChart, VictoryAxis, VictoryLine} from "victory";
 
 class LineDemo extends React.Component {
 
@@ -13,11 +11,10 @@ class LineDemo extends React.Component {
     return (
       <div>
         <h3>Victory Line Graph</h3>
-        <VictoryChart style={{
-            width: 500,
-            height: 350
-          }}>
-          <VictoryAxis dependentAxis orientation="left" style={{grid: {strokeWidth: 1}}}/>
+        <VictoryChart
+          width={500}
+          height={350}>
+          <VictoryAxis dependentAxis style={{grid: {strokeWidth: 1}}}/>
           <VictoryLine
             data={
               _.map(_.range(20), (i) => {
@@ -25,8 +22,7 @@ class LineDemo extends React.Component {
               })
             }
             style={{
-              stroke: "darkgrey",
-              strokeWidth: 1
+              data: {stroke: "darkgrey", strokeWidth: 1}
             }}/>
         </VictoryChart>
       </div>
